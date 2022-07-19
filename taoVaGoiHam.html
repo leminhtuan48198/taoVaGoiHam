@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function xacNhanTienTrinh(traLoi){
+        let ketQua="";
+        if (traLoi){
+            ketQua="Tuyệt vời. Hãy bắt đầu trò chơi"
+        } else {
+            ketQua="Hãy để lúc khác"
+        }
+        return ketQua;
+    }
+    let traLoiConfirm=confirm("Bạn có muốn bắt đầu trò chơi?")
+    let cauTraLoi=xacNhanTienTrinh(traLoiConfirm)
+    alert(cauTraLoi)
+</script>
+</body>
+</html>
